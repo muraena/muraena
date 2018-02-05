@@ -1,0 +1,7 @@
+<ul>
+  <% @paths.each do |path|%>
+      <li node="rep:item">
+        <a href="<%=link_to(path)%>"><%= path %></a>
+      </li>
+  <% end %>
+</ul>
