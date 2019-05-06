@@ -16,15 +16,12 @@ GEM
       css_press
     multi_js (0.1.0)
       uglifier (~> 2)
-    rack (1.6.8)
+    rack (1.6.11)
     rack-protection (1.5.3)
       rack
-    redis (4.0.1)
-    redis-sinatra (1.4.0)
-      redis-store (~> 1.1.0)
-      sinatra (~> 1.4.0)
-    redis-store (1.1.7)
-      redis (>= 2.2)
+    redis (4.1.1)
+    redis-store (1.6.0)
+      redis (>= 2.2, < 5)
     sinatra (1.4.8)
       rack (~> 1.5)
       rack-protection (~> 1.4)
@@ -39,8 +36,8 @@ PLATFORMS
 
 DEPENDENCIES
   html_press (~> 0.8.2)
-  rack
-  redis-sinatra (~> 1.4)
+  rack (>= 1.6.11)
+  redis-store (>= 1.4.0)
   sinatra
 
 RUBY VERSION
