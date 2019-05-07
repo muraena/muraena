@@ -1,9 +1,3 @@
-require 'rubygems'
-require 'bundler'
-require 'redis-sinatra'
+require './app'
 
-Bundler.require
-
-require './index.rb'
-
-run Muraena.new
+run Muraena::App.new
